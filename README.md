@@ -14,7 +14,13 @@ Thus, the dataloader donot need modify. \(The `dataloader` in `autodl`, image's 
 
 Why the `Dset2` only have 152 training samples and 148 validate samples?
 
-`Dset` is the total samples, `Dset2` is the mini dataset, `Dset2_mini` is only with just one sample. 
+- `Dset` is the total samples, `Dset2` is the mini dataset, `Dset2_mini` is only with just one sample. 
+
+- The experiments training process, selected `Dset2` as the training data.
+
+- Still select the landmark_data? No.
+
+Retrain the experiment model and PG4RNet.
 
 The comparasion experiments we selected are: `Sparse depth completion` and `sparse to dense`.
 
