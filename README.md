@@ -12,6 +12,10 @@ In `/mnt/ChillDisk/personal_data/lizc/2023/exp`, the input data in `dataloader` 
 
 Thus, the dataloader donot need modify. \(The `dataloader` in `autodl`, image's shape is `512x1024`, gt_depth's shape is `256x512`, need to modify the `dataloader` code, specifically.\)
 
+Why the `Dset2` only have 152 training samples and 148 validate samples?
+
+`Dset` is the total samples, `Dset2` is the mini dataset, `Dset2_mini` is only with just one sample. 
+
 The comparasion experiments we selected are: `Sparse depth completion` and `sparse to dense`.
 
 ### Select depth pixel location
