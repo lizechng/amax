@@ -6,6 +6,8 @@ it seems that only pytorch 1.13 will be `cpu` version.
 
 In amax A6000, we cannot install cuda 10.2, this will make it incompatible with `Task2_point_generation`
 
+\(Thus, we need to retrain the PG4RNet, or move files to TITANXP in `autodl`, `torch 1.6.0` `cuda 10.2`\)
+
 ## Comparasion Experiments
 
 In `/mnt/ChillDisk/personal_data/lizc/2023/exp`, the input data in `dataloader` is \[radar_depth, rgb\]. The image's shape and the gt_depth's shape are both `512x1024`.
